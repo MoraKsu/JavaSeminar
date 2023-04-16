@@ -1,7 +1,7 @@
 package Seminar01HomeWork;
 import java.util.*;
 
-// Вычислить n-ое треугольного число (сумма чисел от 1 до n)
+// Вычислить n-ое треугольного число (сумма чисел от 1 до n), n! (произведение чисел от 1 до n)
 
 public class task_1 {
     public static void main(String[] args){
@@ -10,6 +10,7 @@ public class task_1 {
         int num = Integer.parseInt(ch.nextLine());
         triangle_num(num);
         System.out.println();
+        factorial(num);
     }
 
     static void triangle_num(int n) {
@@ -18,5 +19,12 @@ public class task_1 {
             tr_num += i;
         }
         System.out.printf("%d triangular number: %d", n, tr_num);
+    }
+    static void factorial(int n) {
+        int f = 1;
+        for (int i = 2; i <= n; i++) {
+            f *= i;
+        }
+        System.out.printf("Factorial of a number %d: %d", n, f);
     }
 }
