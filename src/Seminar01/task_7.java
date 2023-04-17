@@ -1,5 +1,5 @@
 package Seminar01;
-import java.util.*;
+import java.util.Scanner;
 
 // Task_7
 // Дан список. Выведите те его элементы, которые встречаются в списке только один раз. Элементы нужно выводить в том
@@ -21,26 +21,26 @@ import java.util.*;
 
 public class task_7 {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt(); // вводим количество элементов
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt(); // вводим сам список
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input size array: ");
+        int l = Integer.parseInt(sc.nextLine());
+        int[] arr = new int[l];
+        for (int i = 0; i < l; i++) {
+            System.out.print("elem: ");
+            arr[i] = Integer.parseInt(sc.nextLine());
         }
-        Map<Integer, Integer> countMap = new LinkedHashMap<>(); // создаем Map для подсчета количества повторений
-        for (int i = 0; i < n; i++) {
-            int current = arr[i];
-            if (countMap.containsKey(current)) {
-                countMap.put(current, countMap.get(current) + 1);
-            } else {
-                countMap.put(current, 1);
+        System.out.println();
+        unique_elements(arr);
+    }
+
+    static void unique_elements(int[] arr) {
+        System.out.print("Unique elements is: ");
+        for (int k : arr) {
+            int counter = 0;
+            for (int i : arr) {
+                if (k == i) counter++;
             }
-        }
-        for (int i = 0; i < n; i++) {
-            int current = arr[i];
-            if (countMap.get(current) == 1) { // если элемент встречается только один раз
-                System.out.println(current); // выводим его на экран
-            }
+            if (counter == 1) System.out.printf("%d ", k);
         }
     }
 }
