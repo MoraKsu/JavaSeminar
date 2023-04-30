@@ -2,6 +2,8 @@ package Seminar04HomeWork;
 
 import java.util.Random;
 
+// *реализовать вторую задачу через собственный класс используя в основе массив
+
 final class Dequeue {
     public int firstElem;
     public int[] array;
