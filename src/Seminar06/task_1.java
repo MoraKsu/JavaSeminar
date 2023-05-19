@@ -8,16 +8,24 @@ public class task_1 {
         Cat cat1 = new Cat("Васька", 10, "Василий Петрович", "Мейнкун");
         Cat cat2 = new Cat("Мурзик", 8, "Петя", "Сфинкс");
         Cat cat3 = new Cat("Мурзик", 8, "Петя", "Сфинкс");
+        Cat cat4 = new Cat("Василиса", 8, "Ксения", "Неизвестно");
         System.out.println(cat1);
         System.out.println(cat2);
         System.out.println(cat3);
+        System.out.println(cat4);
 
 
         Set<Cat> cats = new HashSet<>();
         cats.add(cat1);
         cats.add(cat2);
         cats.add(cat3);
-        System.out.println(cats);
+        cats.add(cat4);
+        System.out.println();
+        for (Cat cat: cats){
+            if (cat.getAge() == 8){
+                System.out.println(cat);
+            }
+        }
     }
 
     static void ex1(){
