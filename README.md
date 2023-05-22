@@ -14,3 +14,5 @@
 * [Домашнее задание к Семинару 4](https://github.com/MoraKsu/JavaSeminar/tree/master/src/Seminar04HomeWork)
 * [Семинар 5](https://github.com/MoraKsu/JavaSeminar/tree/master/src/Seminar05)
 * [Домашнее задание к Семинару 5](https://github.com/MoraKsu/JavaSeminar/tree/master/src/Seminar05HomeWork)
+* [Семинар 6](https://github.com/MoraKsu/JavaSeminar/tree/master/src/Seminar06)
+* [Домашнее задание к Семинару 6](https://github.com/MoraKsu/JavaSeminar/tree/master/src/Seminar06HomeWork)
